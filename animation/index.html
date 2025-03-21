@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키프레임</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: blueviolet;
+            color: #fff;
+            animation: abc 2s infinite alternate;
+            animation-timing-function: ease-in-out;
+            /*ease-in/out 차이: 시작점부터 갔다가 돌아옴(기본값)/ 갔다가 천천히 돌아옴 */
+           /* animation-name: abc ;
+            animation-duration: 1s;
+            -1s는 실행 X, 900ms*
+            animation-iteration-count: infinite;
+            *infinite 무한대로 반복*/
+            position: absolute; 
+            border-radius: 100px;
+           
+        }
+        @keyframes abc{
+            from{
+                background: yellow;
+                left: 0;
+            }
+            20%{
+                top: 200px;
+                left: 100px;
+            }
+
+            30%{
+                top: 0;
+                left: 150px;
+            }
+
+            50%{
+                left: 200px;
+                top: 200px;
+            }
+
+            80%{
+                left: 0;
+                top: 250px;
+            }
+
+            100%{
+                top:200px;
+                left: 300px;
+            }
+            to{
+                background: brown;
+                left: 0;
+                transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box</div>
+</body>
+</html>
