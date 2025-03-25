@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let length = 16;
+        let weight = 7.5;
+
+        let color = "yellow";
+        let lastName = "young";                             //let과 const(var는 변수명이 중복되어도 오류안남,)
+                                                            //: let 에러메시지가 나옴(중복적으로 이름입력하면, 중복선언X)
+                                                            //: const 변경되면 안되는 값
+
+
+
+        const person = {firstName:"AhYoung",
+                        lastName:"Jeon",
+                        br:"<br>",
+                        age:29};
+        //객체 (Objects)
+
+        const car = ["BMW", "Casper", "Tivoly"];
+        //배열 (Arrays) 처음번째부터 0,1,2~
+
+        const date = new Date();
+        const year = date.getFullYear();  //년도
+        const month = date.getMonth();    //월
+        const today = date.getDate();     //날짜
+        const day = date.getDay();        //요일
+
+        const targetDate = new Date('2025-12-25');
+
+        const difDay = date - targetDate;
+
+        document.write(difDay);
+
+        document.write(date +"<br>");
+        //year, month, day, hour, minute, second, millisecond
+
+        document.write("<hr>");
+        document.write("현재년도:" + year);
+        document.write("<hr>");
+        document.write("현재월:" + month);
+        document.write("<hr>");
+        document.write("오늘날짜:" + today);
+        document.write("<hr>");
+        document.write("오늘요일:" + day);
+
+        document.write("<hr>");
+
+        const weekDay = ["일","월","화","수","목","금","토"];
+        
+        const totoday = weekDay[day];
+
+        document.write(totoday);
+
+        //let x = length + 6 + color + 10;
+        //document.write(x +"<br>");
+        
+        //document.write(car[2]+"<br>")
+
+        //document.write(person.lastName + person.firstName + person.br + person.age + person.br)
+
+        //const week = ["일","월","화","수","목","금","토"];  //객체일땐 중괄호{}, 배열은 대괄호[]
+
+        //document.write("오늘의 요일은 : " + week[2] + person.br)
+
+       
+
+
+    </script>    
+
+</body>
+</html>
