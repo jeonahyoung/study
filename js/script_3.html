@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id=""demo>여러분들이 너무 잘해서 좋아요:)</p>
+    <script>
+        //let today = new Date();
+       // let hour = today.getHours();
+
+        
+        //== 는 데이터 type이 달라도 예를 듦년 숫자 2가 있고 문자열 "2"
+        // 2 == "2" => true
+        //===는 데이터 type이 다르면 비교를 할때 걍 false만 나와요
+        // 2 === 2 => false가 나옵니다
+
+        // if(hour < 10){
+        //    alert("아침입니다.");
+       // } else if(hour < 20){
+        //    alert("오후입니다.");
+       // } else{
+       //     alert("잠들 시간 입니다.");
+       // }
+    //10시~12시 50분까지는 공부하는 시간입니다.
+    //12시 50분이 되면 점심시간이고,
+    //나머지 시간은 잠을 안자고 공부하는 시간입니다.
+
+    //let today = new Date();
+    //let hour = today.getHours();
+    //let minute = today.getMinutes();
+
+    //if ((hour === 10 && minute >= 0) || (hours === 11) || (hour===12 && minute <50)){
+    //   alert("공부하는 시간입니다.");
+    //} else if(hour === 12 && minute >= 50){
+    //    alert("점심시간입니다.");
+    //} else {
+    //    alert("공부하는 시간입니다.");
+    //}
+
+    // 10시 00분 === 11시는 몇분이든 무조건 공부하는 시간에 포함
+    //hours === 10&& minutes >=0  -> 10시0분~59분까지
+    //hours === 11   -> 11시 몇분이든 다 공부하는 시간
+    //hours === 12 && minutes >=50  -> 12시 49분까지 공부하는 시간
+
+
+
+    //== 는 데이터 type이 달라도 예를 듦년 숫자 2가 있고 문자열 "2"
+    // 2 == "2" => true
+    //===는 데이터 type이 다르면 비교를 할때 걍 false만 나와요
+    // 2 === 2 => false가 나옵니다
+    
+
+    //오늘은 무슨 요일? 즐거운 수요일!
+    //각 요일별(7일)로, 여러분들의 할 일을 만들어주세요.
+
+    //let date = new Date();  //Wed Mar 26 2025 12:43:26 GMT+0900 (한국 표준시)
+    //let week = date.getDay();
+    //let weekDay = ["일", "월", "화", "수", "목", "금", "토"];
+    //document.write("오늘은 "+ weekDay[week] +"요일" + "<br>");
+    //if(week===0){
+    //    alert("주말끝");
+    //} else if(week===1){
+    //    alert("월요병");
+    //} else if(week===2){
+    //    alert("ㅇㄹㅇㄴㄹㅇㄴㄹ");
+    //} else if(week===3){
+    //    alert("ㅇㄹㄴㄹ");
+    //} else if(week===4){
+    //    alert("ㅇㄹㄴㄹ");
+    //}
+
+   
+
+
+    //점수를 입력하는 창을 만들어주세요.
+    //90점 이상 : "A학점입니다."
+    //80점 이상 90점 미만 : "B학점입니다."
+    //70점 이상 80점 미만 : "C학점입니다."
+    //60점 이상 70점 미만 : "D학점입니다."
+    //60점 미만 : "F학점입니다."
+
+    //const score = Number(prompt("점수를 입력해주세요"));  prompt는 텍스트로 받음
+    //if( score >= 90){
+    //    document.write("A학점입니다.");
+    //} else if(score >=80){
+    //    document.write("B학점입니다.");
+    //}else if(score >=70){
+    //    document.write("C학점입니다.");
+    //}else if(score >=60){
+    //    document.write("D학점입니다.");
+    //}else{
+    //    document.write("F학점입니다.");
+    //}
+
+    //아이디와 비밀번호를 입력받아서,
+    // 아이디가 "admin" 이고 비밀번호가 "1234"라면
+    // "로그인 성공!""
+    // 아이디는 맞고 비밀번호가 틀리면 "비밀번호가 틀렸습니다!"
+    // 아이디가 틀렸다면 "아이디가 존재하지 않습니다!"
+
+    //const id = prompt("아이디를 입력해주세요:");
+    //const password = prompt("패스워드를 입력해주세요:");
+  
+    //if(id === "admin" && password === 1234){
+    //   alert("로그인성공!");
+    //} else if(id === "admin"){
+    //    alert("비밀번호가 틀렸습니다!");
+    //} else{
+    //    alert("아이디가 존재하지 않습니다!");
+    //}
+
+    //const userName = prompt("Enter your id");
+    //const password = prompt("Enter your password");
+    //if ((userName == "admin") && (password == "1234")){
+    //        document.write("로그인 성공~");
+    //} else if ((userName == "admin") && (password !="1234")){
+    //        document.write("비밀번호가 틀렸습니다");
+    //} else if ((userName != "admin") && (password == "1234")){
+    //        document.write("아이디가 틀렸습니다");
+    //} else{
+    //        document.write("아이디 그리고 비밀번호 둘다 틀렸습니다");
+    //}
+
+    //문제 6: 나이별 입장 가능 여부
+    //사용자로부터 나이를 입력받아,
+    //18세 이상이면 "입장 가능합니다!"
+    //13세 이상 18세 미만이면 "보호자 동반이 필요합니다!"
+    //13세 미만이면 "입장할 수 없습니다!"
+    //라는 메시지를 출력하는 코드를 작성하세요.
+
+    //let age = Number(prompt("나이를 입력해주세요!"));  Number(prompt)랑 prompt는
+    //if(age>=18){
+    //    alert("입장 가능합니다!");
+    //} else if((age>=13) && (age<18)){
+    //    alert("보호자 동반이 필요합니다!");
+    //} else if(age<13){
+    //    alert("입장할 수 없습니다!");
+    //}
+
+    //문제 7: 최댓값 찾기
+    //사용자로부터 세 개의 숫자를 입력받아,
+    //그중에서 가장 큰 숫자를 출력하는 코드를 작성하세요.
+    //let number_1 = Number(prompt("첫번째 숫자를 입력해주세요"));
+    //let number_2 = Number(prompt("두번째 숫자를 입력해주세요"));
+    //let number_3 = Number(prompt("세번째 숫자를 입력해주세요"));
+    //let max = num1; 첫번째 숫자가 가장 크다고 가정
+    //if(num2>max){
+    //    max = num2; num2가 더 크면 max를 num2로 변경
+    //}
+    //if(num3>max){
+    //    max = num3; num3가 더 크면 max를 num3로 변경
+    //}
+    //alert("가장 큰 숫자는" + max + "입니다!");
+
+
+    //문제 9: 버스 요금 계산기
+    //사용자의 나이를 입력받아,
+    //7세 이하: "무료입니다!"
+    //8세 이상 18세 이하: "청소년 요금은 500원입니다!"
+    //19세 이상 64세 이하: "성인 요금은 1000원입니다!"
+    //65세 이상: "무료입니다!"
+    //라는 메시지를 출력하는 코드를 작성하세요.
+    //let user = prompt("나이를 입력해주세요");
+    //if(user<="7"){
+    //    alert("무료입니다!")
+    //}else if(user>=8 && user<="18"){
+    //    alert("청소년 요금은 500원입니다!");
+    //}else if(user>="19" && user<="64"){
+    //    alert("성인 요금은 1000원입니다!");
+    //}else{
+    //    alert("무료입니다!");
+    //}
+
+    
+    //문제 10: 은행 잔액 확인
+    //사용자로부터 현재 잔액과 출금할 금액을 입력받아,
+    //잔액보다 출금할 금액이 크면 "잔액이 부족합니다!"
+    //출금이 가능하면 "출금이 완료되었습니다!"
+    //라는 메시지를 출력하는 코드를 작성하세요.
+    //let current = Number(prompt("현재 잔액은?"));
+    //let out = Number(prompt("얼마나 출금?"));
+    //if(current<out){
+    //    alert("잔액이 부족합니다!");
+    //} else{
+    //    alert("출금이 완료되었습니다. 남은 잔액:" + (current-out) + "원");
+    //}
+
+    //숫자를 입력받아 홀수인지 짝수인지 출력(if문만 사용)
+    //let no1 = Number(prompt("숫자를 입력하세요"));  
+    //number 함수 :문자열-> 숫자로, prompt는 사용자가 숫자로 입력해도 문자열로 인식
+    //if((no1%2) === 0){
+    //    alert("짝수입니다.");
+    //}else{
+    //    alert("홀수입니다.");
+    //}
+
+
+    //물건 가격(price)과 구매 수량(quantity)을 입력받아 총 금액을 계산하세요.
+    //수량이 10개 이상이면 10% 할인을 적용하세요.
+    //let price = Number(prompt("가격을 입력하세요"));
+    //let quantity = Number(prompt("수량을 입력하세요"));
+    //let totalprice = price*quantity;
+    //if(quantity>=10){
+        //document.write("10개이상 구매하셔서 10%할인 적용됨. 총 금액은:" + totalprice*0.9 + "원입니다.")
+    //    document.write(`10%할인된 총 금액 : ${totalprice*0.9}원`);
+    //} else if(quantity<10){
+    //document.write("총 금액은:" + totalprice + "원입니다.");
+    //    document.write(`총 금액 : ${totalprice}원`);
+    //}
+
+
+    //월(month)을 입력받아 계절을 출력하세요.
+    //3~5월: 봄
+    //6~8월: 여름
+    //9~11월: 가을
+    //12~2월: 겨울
+    //let season = Number(prompt("월을 입력하십시오"))
+    //if(season>=3 && season<=5){
+    //    alert("Spring");
+    //} else if(season>=6 && season<=8){
+    //    alert("Summer");
+    //}else if(season>=9 && season<=11){
+    //    alert("Autumm");
+    //}else{
+    //    alert("Winter");
+    //}
+
+
+
+    </script>
+</body>
+</html>
