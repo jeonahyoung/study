@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // for 반복문
+        // 동작은 여러번 수행할 때 작동하는 문법
+        // 예를 들어 "안녕하세요" 5번 이상 출력하고 싶을 때
+        // for(초기값; 조건; 증가값){}
+        //for(let i=1; i<=5; i++){
+        //    document.write("안녕하세요"+ "<br>");
+        //}
+
+        //let sum=0; //합계를 저장할 변수
+
+        //for(let a=1; a<=10; a++){
+        //    sum += a;
+        //}
+        // 값은 55출력
+        // 0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
+        // document.write("1부터 10까지의 합:"+sum +"<br>");
+
+        // const fruits = ["사과", "바나나","포도"];
+        // //배열은 fruits[0]~[2] 만들어주고
+        // for (let f=0; f<fruits.length;i++){   //f<fruits.length  숫자로 반환해주는 함수
+        // length 배열에 숫자를 반환
+        //     document.write(fruits[f]);
+        // }
+
+        // for(let fy=1; fy<=9; fy++){
+        //     document.write("2X"+fy+"="+(2*fy) +"<br>");
+        // }
+
+        //1~100까지 짝수만 출력해주세요
+        // -> 시작 값이 2부터 시작해야되고, 그리고 그 값을 1개씩 더해줘야합니다
+        // for(let d=2; d<=100; d+=2){
+        //     document.write(d +"<br>");
+        // }
+        
+        //50부터 역순으로 50, 49, 48, ...., 1까지만 역순으로 나열하세요
+        // for(let n=50; n>0 ; n--){
+        //     document.write(n +"<br>");
+        // }
+
+        //3단 구구단 만드세요(백틱사용)
+        // for(let A=1; A<=9; A++){
+        //     document.write(`3X${A}=${3*A}<br>`);
+        // }
+
+        //전제조건 2씩 증가하지만 2의 배수를 100까지 더한 값을 출력하세요.
+        // let sum2 = 0;
+        // for(let j=2 ; j<=100 ; j+=2){
+        //     sum2 += j;
+        // }
+        // document.write(sum2);  //2550
+
+        // for(let dan=2 ; dan<=9 ; dan++){
+        //     document.write(dan+"단" + "<br>");
+        //     //2~9까지 증가
+        //     for(let y=1 ; y<=9 ; y++){
+        //        document.write(dan + "X" + y + "=" + (dan*y) + "<br>");
+        //        //dan(2~9) + "X" + y + "=" + (dan*y)
+        //     }
+        // }
+
+    for(let r = 1 ; r <=3 ; r++){
+        let stars = "<br>"; //*이 들어갈 자리는 있어야해서 공백으로 넣음
+        for(let c = 0; c <= r ; c++){
+            stars +="*";
+            document.write(stars);
+            
+        }
+       
+    }
+    
+        
+    </script>
+</body>
+</html>
