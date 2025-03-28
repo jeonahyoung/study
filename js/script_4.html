@@ -69,14 +69,20 @@
         //     }
         // }
 
-    for(let r = 1 ; r <=3 ; r++){
-        let stars = "<br>"; //*이 들어갈 자리는 있어야해서 공백으로 넣음
-        for(let c = 0; c <= r ; c++){
-            stars +="*";
-            document.write(stars);
-            
+    // for(let r = 1 ; r <=3 ; r++){
+    //     let stars = "<br>"; //*이 들어갈 자리는 있어야해서 공백으로 넣음
+    //     for(let c = 0; c <= r ; c++){
+    //         stars +="*";
+    //         document.write(stars);
+    //     } 
+    // }
+
+    //for, if 를 사용하여 1~20까지의 3의 배수만 골라서 출력하시오
+    for(let n = 1 ; n<=20 ; n++){
+         if(n%3===0){
+            document.write(n +"<br>");
+            //console.log(`${n}은 3의 배수입니다.`);  *웹사이트 검사에 입력했을 때 나옴
         }
-       
     }
     
         
