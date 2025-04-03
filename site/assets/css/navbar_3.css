@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /*모든 전체영역에 적용하는거라 smooth는 *에 입력*/
+}
+
+body{
+    
+    background: #fefefe;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: #11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;  
+    /*inline에서는 width,height가 적용 X,
+    block으로 하면 적용*/
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: all 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover{
+    color: #11101d;
+    background: #fefefe;
+}
+/*.nav-bar ul il a의 active에게만 효과를 줄거야
+  .nav-bar .active*/
+.nav-bar ul li a.active{ 
+    color: #11101b;
+    background: #fefefe;
+}
+
+.nav-bar.active{
+    left:0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+/*모든 브라우저에 적용해라.
+  only screen이 빠지면 일부 브라우저에서만 작동됨
+-> 보통은 다 적용되나 간혹 css가 적용 안될때도 있음*/
+@media only screen and (max-width:1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 0;
+        background: #11101b;
+        transition: all 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar ul{
+        opacity: 0;
+        display: block;
+        width: fit-content;
+        /*내용 크기만큼 너비가 자동 조절,
+          내용이 작으면 너비도 작고,
+          내용이 커지면 너비도 커짐*/
+        /*width: 100%는 부모영역에 꽉 채움
+                        (부모영역보다 작을 수 X)
+          fit-content는 내용크기에 맞게 조정됨
+                       (부모영역보다 작을 수 있음)*/
+        margin: 80px auto 0 auto;
+        transition: all 0.5s;
+    }
+
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+
+    }
+    
+
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <button id="btn" class="btn" style="width: 200px;height: 100px; background-color: gold;">
+        Click the Button
+    </button>
+     /*es5, es6 버전 구분*/
+    <div id="scroll" style="overflow: scroll; width: 500px; height: 300px;">
+        <p style="font-size: 3.5rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque modi nemo autem ullam exercitationem magni veniam cupiditate laborum maxime officiis, sunt incidunt optio delectus omnis voluptates sapiente? Velit, molestias non.
+        </p>
+    </div>
+    scroll을 하면 배경색이 빨강색이 되는 함수
+    <script>
+        let scrl = document.querySelector('#scroll');
+        function scrollDiv(e){
+            e.target.style.background = "red";
+        }
+        scrl.addEventListener("scroll",scrollDiv);
+    </script>   -->
+
+    <script>
+        //let btn = document.getElementById('btn');
+        //let btn = document.querySelector('.btn')
+        // id 값이 btn 값을 가져옴
+        //btn.addEventListener("click",abc);
+        // 이벤트를 작동할 예정 -> 클릭을 하면
+        // function abc(){
+        //     alert("당신은 즐거운 하루를 보내고 있습니당:)");
+        // }
+        //function abc(){
+        //    prompt("당신의 행운아이템을 알려주세요!!.!");
+        //}
+        //btn.addEventListener("click",abc);
+        //이벤트를 먼저 만들고 함수작동해도 되고, 작동먼저하고 이벤트 지정해도 됨
+
+        //let btn = document.querySelector('.btn');
+
+        // btn.addEventListener("click",()=>{
+        //     alert("으이구!!왜눌러!!! 누르지마쇼!!!.!");
+        // })
+
+
+        // btn.addEventListener("mouseover",(e)=>{
+        //     e.target.style.background = 'skyblue';
+        //     e.target.style.color = '#fff';
+        // });  //''이든 "" 크게 상관 없음
+        // btn.addEventListener("mouseout",(e)=>{
+        //     e.target.style.background = "#fff";
+        //     e.target.style.color = "#000";
+        // });
+
+    </script>
+
+    <script>
+        // 10~1까지 역순으로 출력
+        // (for문 이용하여 출력하시오)
+        // for(let i = 10; i>=1 ; i--){
+        //     document.write(i +"<br>"); 
+        // }
+
+
+        // 1~10까지 짝수만 출력
+        // (for, if 사용하기)
+        // for(let i = 1 ; i<=10 ; i++){
+        //     if(i%2===0){
+        //         document.write(i);
+        //     }
+        // }
+
+
+        // 배열에서 5보다 큰 수 찾기
+        // [3,8,2,10] 에서 5보다 큰 거만 출력
+        // const numbers = [3, 8, 2, 10];
+        // for(let i = 0; i<numbers.length; i++){
+        //     if(numbers[i]>5){
+        //         document.write(numbers[i]+"<br>" );
+        //     }
+        // }
+
+        
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery_3</title>
+</head>
+<body>
+    <h1>.before() 메소드</h1>
+    <table>
+        <tr id="firstRow">
+            <td>첫번째 셀</td>
+            <td>두번째 셀</td>
+        </tr>
+    </table>
+    <button>행 추가</button>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $("#firstRow").after("<tr><td>이름</td><td>홍길동</td></tr>").before("<tr><td>나이</td><td>100세</td></tr>")
+            });
+        });
+        //before은 firstrow앞에 입력되고
+        //after은 firstrow뒤에 입력됨
+
+    </script>
+</body>
+</html>

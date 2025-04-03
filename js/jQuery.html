@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        .box{
+            width: 100px; height: 100px;}
+        .box1{
+            background-color: yellow; position: absolute;
+        }
+        .box2{
+            background-color: skyblue;
+        }
+        .box3{
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <button>Click!</button>
+    <ul class="list">
+        <li>Hellooow</li>
+        <li>Hiiii</li>
+        <li>Byeeeee</li>
+    </ul>
+    <div class="box box1"></div>
+    <!-- <div class="box box2"></div>
+    <div class="box box3"></div> -->
+    <!--jQuery 3.2.1 버전-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script>
+
+
+    $(function(){
+        $('button').click(function(){
+            $("li").prepend("go to home");
+            //$('.list').append("<li>네번째야</li>");
+            //append 추가는 어디에? -> 마지막 요소에 추가됨
+            //prepend 요소 앞에 추가됨
+        });
+    })
+
+
+    // $(document).ready(function(){  //일단 준비해
+    //     $("button").click(function(){   //버튼을 클릭하면
+    //         $(".box1").animate({    //밑에 조건으로 출력해
+    //             left:'+=250px',
+    //             //'+='계속 더해주면서 옮겨짐
+    //             width: '+=300px',
+    //             height: '300px',
+    //             opacity: '0.5'})
+    //     })
+    // })
+
+
+    // $('.box1').fadeIn(1000);
+        // $('.box2').fadeIn(2000);
+        // //속도 XX초(1000초=1초)
+        // $('.box3').fadeIn(5000);
+ </script>
+
+</body>
+</html>
+
+
+<!--jQuery 쿼리문
+    1. jQuery 버전에 따라서 차이가 있음
+    2. jQuery 문법이 정말 간단 -->

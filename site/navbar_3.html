@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/navbar_3.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Soft landing</div>
+<!-- LOGO  -->
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+<!--고스트버튼-->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#sec01" class="active">Home</a></li>
+            <li><a href="#sec02">Features</a></li>
+            <li><a href="#sec03">Pricing</a></li>
+            <li><a href="#sec04">About</a></li>
+            <li><a href="#sec05">Contact</a></li>
+        </ul>
+    </nav>
+<!--메뉴-->
+    </header>
+    <section id="sec01" style="height: 100vh; background: skyblue;">
+
+    </section>
+
+
+    <section id="sec02" style="height: 100vh; background: pink;">
+
+    </section>
+
+
+    <section id="sec03" style="height: 100vh; background: blanchedalmond;">
+
+    </section>
+
+
+    <section id="sec04" style="height: 100vh; background: brown;">
+
+    </section>
+
+
+    <section id="sec05" style="height: 100vh; background: yellowgreen;">
+
+    </section>
+    
+
+
+
+
+
+
+
+
+    <script>
+        let hamburger = document.querySelector('.hamburger');
+        hamburger.onclick = function(){
+            navBar = document.querySelector('.nav-bar');
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+
+</html>
+
+
+<!--
+웹표준의 규격
+
+<li><a href="#" class="active">Home</a></li> --O
+<a href="#"><li>Home</li></a>  --X(웹표쥰규격에 X)
+
+<button><a href="#">클릭</a></button>  --X
+<a href="#"><button>클릭</button></a>  --O
+
+<span><a href="#">안녕</a></span>  --O(둘 다 인라인방식이라)
+<a href="#"><span>안녕</span></a>  --X
+-->

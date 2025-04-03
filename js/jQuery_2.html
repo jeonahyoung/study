@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery_2</title>
+</head>
+<body>
+    <h1>.appendTo() 메소드</h1>
+    <p>아래 버튼들을 왼쪽에서부터 차례대로 눌러보시오</p>
+
+    <ul id="list">
+        <li id="firstItem">첫 번째 아이템</li>
+        <li id="secondItem">두 번째 아이템</li>
+        <li id="thirdItem">세 번째 아이템</li>
+    </ul>
+
+    <button id="firstBtn">첫 번째 아이템 추가</button>
+    <button id="secondBtn">두 번째 아이템 추가</button>
+    <button id="thirdBtn">세 번째 아이템 추가</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            $("#firstBtn").on("click", function(){
+                $("#firstItem").appendTo("#list");
+            });
+            $("#secondBtn").on("click",function(){
+                $("#secondItem").appendTo("#list");
+            });
+            $("#thirdBtn").on("click",function(){
+                $("#thirdItem").appendTo("#list");
+            });
+        });
+        //append() 마지막에 새로운 요소나 콘텐츠를 추가함
+        //prepend() 선택한 요소의 처음에 새로운 요소나 콘텐츠르 추가
+        //appendTo() 선택한 요소를 해당 요소의 마자막에 삽입
+        //prependTo() 선택한 요소를 해당 요소의 처음에 삽입
+        //.html() 해당 요소의 html 콘텐츠를 반환하거나 설정
+        //.text() 해당 요소의 텍스트 콘텐츠를 반환하거나 설정
+        //.before() 선택한 요소의 바로 앞에 새로운 요소나 콘텐츠를 추가
+        //.after() 선택한 요소의 바로 뒤에 새로운 요소나 콘텐츠 추가
+        //.insertBefore() 선택한 요소를 해당 요소의 앞에 삽입
+        //.insertAfter() 선택한 요소를 해당 요소의 뒤에 삽입
+        //.wrap() 선택한 요소를 포함하는 새로운 요소 추가
+        //.wrapAll() 선택한 모든 요소를 포함하는 새로운 요소를 추가
+        //.wrapInner() 선택한 요소에 포함하는 새로운 요소 추가
+        //.clone() 선택한 요소를 복사하여 새로운 요소를 생성
+        //.replaceAll() 선택한 요소를 지정된 요소로 대체
+        //.replaceWith() 선택한 모든 요소를 지정된 요소로 대체
+        //.remove() 선택한 요소를 DOM 트리에서 삭제
+        //.detach() 선택한 요소를 DOM 트리에서 삭제
+        //.empty() 제택한 요소의 자식 요소를 모두 삭제
+    </script>
+</body>
+</html>
